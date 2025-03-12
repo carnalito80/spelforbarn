@@ -18,7 +18,6 @@ export default function PostList({
 }) {
   const imageProps = post?.featuredImage ? post.featuredImage : null;
   const AuthorimageProps = post?.author?.image ? '/images/' + post.author.image : null;
-  console.log(post)
   return (
     <>
       <div
@@ -97,7 +96,7 @@ export default function PostList({
                   <Link
                     href={`/post/${
                       pathPrefix ? `${pathPrefix}/` : ""
-                    }${post.slug.current}`}>
+                    }${post.slug}`}>
                     {post.excerpt}
                   </Link>
                 </p>
@@ -105,10 +104,11 @@ export default function PostList({
             </div>
 
             <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
+            {AuthorimageProps && (
               <Link href={`/author/${post?.author?.slug}`}>
                 <div className="flex items-center gap-3">
                   <div className="relative h-5 w-5 flex-shrink-0">
-                    {AuthorimageProps && (
+                    
                       <Image
                         src={AuthorimageProps}
                         alt={post?.author?.name}
@@ -116,16 +116,19 @@ export default function PostList({
                         fill
                         sizes="20px"
                       />
-                    )}
+                    
                   </div>
                   <span className="truncate text-sm">
                     {post?.author?.name}
                   </span>
                 </div>
               </Link>
+              )}
+              {AuthorimageProps && (
               <span className="text-xs text-gray-300 dark:text-gray-600">
                 &bull;
               </span>
+              )}
               {post.date && (
               <time
                 className="truncate text-sm"

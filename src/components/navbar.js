@@ -26,10 +26,10 @@ export default function Navbar(props) {
   ];
 
   const rightmenu = [
-    {
-      label: "Archive",
-      href: "/archive"
-    },
+    // {
+    //   label: "Archive",
+    //   href: "/archive"
+    // },
     // {
     //   label: "Pro Version",
     //   href: "https://stablo-pro.web3templates.com/",
