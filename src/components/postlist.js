@@ -5,7 +5,7 @@ import { cx } from "/utils/all";
 import { parseISO, format } from "date-fns";
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import CategoryLabel from "./blog/category";
-import { getAuthors } from '/utils/authors'; 
+
 
 export default function PostList({
   post,
