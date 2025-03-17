@@ -6,9 +6,9 @@ date: '2024-04-15'
 featured: true
 author: jerker
 categories:
-  - category: fyra
+  - category: 4aringar
   - category: familjespel
-  - category: RUT
+  - category: rut
 featuredImage: '/images/test.avif'
 excerpt: >-
  RUT är en förkortning för rengöring, underhåll och tvätt. Det betyder att du kan få avdrag på skatten för hushållsnära tjäns22ter som tex. flytt- och städhjälp, trädgårdsarbete och snöskottning.

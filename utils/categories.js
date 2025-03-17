@@ -37,3 +37,12 @@ const categoryMap = {
   export const mapCategories = (categories) => {
     return categories.map((category) => getCategoryData(category));
   };
+
+ export const getCategoryName = (slug) => {
+    for (const key in categoryMap) {
+        if (categoryMap[key].slug === slug) {
+            return categoryMap[key].title;
+        }
+    }
+    return slug; // 
+}

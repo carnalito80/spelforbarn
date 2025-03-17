@@ -121,7 +121,7 @@ export default function Author(props) {
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
           {posts.map(post => (
-              <PostList key={post._id} post={post} aspect="square" />
+              <PostList key={post.slug} post={post} aspect="square" />
           ))}
         </div>
       </Container>

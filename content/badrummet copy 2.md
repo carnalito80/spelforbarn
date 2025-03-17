@@ -5,7 +5,7 @@ status: Published
 date: '2024-06-15'
 featured: true
 categories:
-  - category: fyra
+  - category: 4aringar
   - category: familjespel
   - category: RUT
 featuredImage: '/images/test.avif'
