@@ -8,17 +8,18 @@ const authorMap = {
       image: "jerker.jpg",
       bio: "Jerker brinner för brädpspel och kortspel av olika slag, allt från lite enklare spel som For Sale till tungviktare som War of the Ring. Favoritspelet med barnen och familjer än 7 Wonders."
     },
-    test: {
-      name: "TEst",
-      slug: "test",
+    sofia: {
+      name: "Sofia",
+      slug: "sofia",
       color: "blue", // Example color for 'cows'
-      image: "test.jpg"
+      image: "sofia.jpg",
+      bio: "Sofia är en rutinerad gamer som för tillfället spelar Baldurs Gate 3 mer än brädspel. Kul för hennes, tråkigt för oss."
     },
-    test2: {
-      name: "TEst2",
-      slug: "test-2",
+    carl: {
+      name: "Carl",
+      slug: "carl",
       color: "orange", // Example color for 'cleaning'
-      image: "test2.jpg"
+      image: "carl.jpg"
     },
   };
   
@@ -29,7 +30,7 @@ const authorMap = {
       name: authorName, // Default name to the category name
       slug: authorName.toLowerCase().replace(/\s+/g, '-'), // Default slug: lowercase with hyphens
       color: "purple", // Default color: gray
-      image: "test3.jpg"
+      image: "test2.jpg"
     };
   };
   

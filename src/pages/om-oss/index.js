@@ -53,18 +53,14 @@ export default function About({ authors }) {
 
       <div className="mx-auto prose text-center dark:prose-invert mt-14">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+         Vi ämnar att ge folk bra tips och recensioner för olika typer av spel, de flesta riktade mot barn.
         </p>
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+          Vi är inte sponsrade av något företag, men det kan förekomma affiliate länkar på sidan där vi länkar till olika butiker som säljer spel som vi gillar.
         </p>
+        <br></br>
         <p>
-          <Link href="/contact">Get in touch</Link>
+          <Link href="/">Kontakta oss</Link>
         </p>
       </div>
     </Container>

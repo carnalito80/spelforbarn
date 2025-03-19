@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { cx } from "/utils/all";
 //import { urlForImage } from "@/lib/sanity/image";
-import { parseISO, format } from "date-fns";
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import CategoryLabel from "./blog/category";
 
@@ -133,10 +132,7 @@ export default function PostList({
               <time
                 className="truncate text-sm"
                 dateTime={post.date}>
-                {format(
-                  parseISO(post.date),
-                  "MMMM dd, yyyy"
-                )}
+                {new Date(post.date).toLocaleDateString("sv-SE")}
               </time>
               )}
             </div>

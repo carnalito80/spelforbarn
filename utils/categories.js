@@ -9,17 +9,27 @@ const categoryMap = {
     familjespel: {
       title: "Familjespel",
       slug: "familjespel",
-      color: "green", // Example color for 'space'
+      color: "green", 
     },
     fyra: {
       title: "4år+",
       slug: "4aringar",
-      color: "blue", // Example color for 'cows'
+      color: "blue", 
     },
     tio: {
       title: "10år+",
       slug: "10aringar",
-      color: "orange", // Example color for 'cleaning'
+      color: "orange", 
+    },
+    enkla: {
+      title: "Enkla spel",
+      slug: "enkla-spel",
+      color: "lightblue", 
+    },
+    bradspel: {
+      title: "Brädspel",
+      slug: "bradspel",
+      color: "lightblue", 
     },
   };
   
@@ -29,7 +39,7 @@ const categoryMap = {
     return categoryMap[categoryName] || {
       title: categoryName, // Default title to the category name
       slug: categoryName.toLowerCase().replace(/\s+/g, '-'), // Default slug: lowercase with hyphens
-      color: "purple", // Default color: gray
+      color: "purple", // Default color
     };
   };
   

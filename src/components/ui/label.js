@@ -4,6 +4,7 @@ export default function Label(props) {
   const color = {
     green: "text-emerald-700",
     blue: "text-blue-600",
+    lightblue: "text-blue-500",
     orange: "text-orange-700",
     purple: "text-purple-600",
     pink: "text-pink-600"
@@ -11,6 +12,7 @@ export default function Label(props) {
   const bgcolor = {
     green: "bg-emerald-50",
     blue: "bg-blue-50",
+    lightblue: "bg-blue-50",
     orange: "bg-orange-50",
     purple: "bg-purple-50",
     pink: "bg-pink-50"
@@ -32,7 +34,7 @@ export default function Label(props) {
     <span
       className={cx(
         "inline-block text-xs font-medium tracking-wider uppercase ",
-        !margin && " mt-5",
+        !margin && " mt-4",
         color[props.color] || color[pink]
       )}>
       {props.children}

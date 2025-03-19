@@ -6,7 +6,7 @@ export default function CategoryLabel({
   nomargin = false
 }) {
   return (
-    <div className="flex gap-3">
+    <div className="flex flex-wrap gap-x-3 gap-y-0">
       {categories?.length &&
         categories.slice(0).map((category, index) => (
           <Link

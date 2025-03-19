@@ -1,10 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-// import remark from 'remark';
-import { parseISO, format } from "date-fns";
-// import html from 'remark-html';
-// import parse from 'remark-parse'; // Parse markdown properly
+import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm'; // For GitHub-flavored markdown support (tables, task lists, etc.)
 import rehypeRaw from 'rehype-raw'; // To allow raw HTML parsing
@@ -53,7 +50,7 @@ export async function getStaticPaths() {
       props: {
         post: {
             title: data.title,
-            date: data.date,
+            date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01",  // Ensure date format
             status: data.status,
             categories,
             estReadingTime,
@@ -67,19 +64,23 @@ export async function getStaticPaths() {
   }
   
   const Post = ({ post }) => {
-    console.log(post)
-    //const { loading, post } = props;
-    // const slug = post?.slug;
     
-    // if (!slug) {
-    //     notFound();
-    // }
-
     const imageProps = post?.featuredImage ? post.featuredImage : null;
     const AuthorimageProps = post?.author?.image ? '/images/' + post.author.image : null;
 
     return (
         <>
+         < Head>
+          <title>{post.meta.title}</title>
+          <meta name="description" content={post.meta.description} />
+          <meta property="og:title" content={post.meta.title} />
+          <meta property="og:description" content={post.meta.description} />
+          <meta name="twitter:card" content={imageProps} />
+          {post.meta.keywords && (
+          <meta name='keywords' content={post.meta.keywords} />
+          )}
+          {/* Add other meta tags as needed */}
+        </Head>
         <Container className="!pt-0">
           <div className="mx-auto max-w-screen-md ">
             <div className="flex justify-center">
@@ -115,10 +116,7 @@ export async function getStaticPaths() {
                     <time
                       className="text-gray-500 dark:text-gray-400"
                       dateTime={post?.datet}>
-                      {format(
-                        parseISO(post?.date),
-                        "MMMM dd, yyyy"
-                      )}
+                      {new Date(post.date).toLocaleDateString("sv-SE")}
                     </time>
                     <span>· {post.estReadingTime || "5"} minuters läsning</span>
                   </div>
@@ -144,12 +142,24 @@ export async function getStaticPaths() {
         <Container>
           <article className="mx-auto max-w-screen-md ">
             <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
-            <ReactMarkdown 
+              <article className="main-article">
+                <ReactMarkdown 
+                    components={{
+                      img: ({ node, ...props }) => (
+                        <figure className="flex flex-col items-center">
+                        <image className="w-full max-w-xs md:max-w-md lg:max-w-lg mx-auto block" {...props} />
+                        {props.alt && <figcaption className="mt-2 text-sm text-gray-600 italic">{props.alt}</figcaption>}
+                      </figure>
+
+                      ),
+                     
+                    }}
                     remarkPlugins={[remarkGfm]} 
                     rehypePlugins={[rehypeRaw, rehypeSanitize]} // Use rehype-raw and rehype-sanitize
-                    >
-                        {post.content}
-            </ReactMarkdown>
+                >
+                            {post.content}
+                </ReactMarkdown>
+              </article>
             {/* <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} /> */}
               {/* {post.contentHtml && <PortableText value={post.contentHtml} />} */}
             </div>

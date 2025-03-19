@@ -26,7 +26,7 @@ export async function getStaticProps() {
     return {
       slug: fileName.replace(/\.md$/, ''),
       title: data.title,
-      date: data.date,
+      date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", // Convert to YYYY-MM-DD
       status: data.status,
       featured: data.featured,
       categories,
@@ -36,6 +36,10 @@ export async function getStaticProps() {
 
     };
   });
+
+// ✅ Convert strings back to Date objects before sorting
+posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 
   return {
     props: {

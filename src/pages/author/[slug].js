@@ -57,7 +57,7 @@ export async function getStaticProps({ params }) {
       if (data.author && data.author === slug) {
         return {
           title: data.title,
-          date: data.date,
+          date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", // Convert to YYYY-MM-DD
           status: data.status,
           categories,
           featuredImage: data.featuredImage,
@@ -71,6 +71,9 @@ export async function getStaticProps({ params }) {
     .filter(Boolean); // Only keep the posts that match the author slug
 
 
+
+   // Sort posts by date (newest first)
+   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // const authorData = {
   //   name: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '), // Example: 'john-doe' -> 'John Doe'

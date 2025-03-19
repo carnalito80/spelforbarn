@@ -24,7 +24,7 @@ export async function getStaticProps() {
     return {
       slug: fileName.replace(/\.md$/, ''),
       title: data.title,
-      date: data.date,
+      date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", 
       status: data.status,
       categories,
       featuredImage: data.featuredImage,
@@ -34,6 +34,9 @@ export async function getStaticProps() {
 
     };
   });
+
+   // Sort posts by date (newest first)
+   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return {
     props: {

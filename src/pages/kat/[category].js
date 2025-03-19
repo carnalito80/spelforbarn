@@ -59,7 +59,7 @@ export async function getStaticProps({ params }) {
               posts.push({
                   slug: filename.replace('.md', ''),
                   title: data.title || filename.replace('.md', ''),
-                  date: data.date,
+                  date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01",  // Ensure date format
                   status: data.status,
                   categories,
                   featuredImage: data.featuredImage,
@@ -71,6 +71,10 @@ export async function getStaticProps({ params }) {
           }
       }
   });
+
+  
+   // Sort posts by date (newest first)
+   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return {
       props: {
