@@ -7,7 +7,8 @@ export default function Label(props) {
     lightblue: "text-blue-500",
     orange: "text-orange-700",
     purple: "text-purple-600",
-    pink: "text-pink-600"
+    pink: "text-pink-600",
+    orange_jk: "text-orange-jk"
   };
   const bgcolor = {
     green: "bg-emerald-50",

@@ -16,6 +16,11 @@ const categoryMap = {
       slug: "4aringar",
       color: "blue", 
     },
+    sex: {
+      title: "6år+",
+      slug: "6aringar",
+      color: "orange_jk", 
+    },
     tio: {
       title: "10år+",
       slug: "10aringar",

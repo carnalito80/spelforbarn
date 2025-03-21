@@ -39,7 +39,9 @@ body {
   margin-right: auto;
 }
 
-
+.text-orange-jk {
+  color: #ff9a00;
+}
 .main-article h1 {
   font-size: var(--text-4xl);
   line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -98,6 +100,5 @@ unicode-bidi: isolate;
 }
 
 .main-article a {
-
   color: var(--color-blue-600);
 }
