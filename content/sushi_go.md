@@ -10,6 +10,7 @@ categories:
   - category: kortspel
   - category: enkla
   - category: sex
+  - category: recension
 featuredImage: '/images/sushi_go.webp'
 excerpt: >-
  I Sushi go kommer spelarna att vara matgäster som äter på en sushirestaurang när de försöker samla de bästa kombinationerna av rätter som finns tillgängliga.
