@@ -59,7 +59,6 @@ export async function getStaticProps({ params }) {
           title: data.title,
           date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", // Convert to YYYY-MM-DD
           status: data.status,
-          slug: data.slug,
           categories,
           featuredImage: data.featuredImage,
           excerpt: data.excerpt,
@@ -125,7 +124,7 @@ export default function Author(props) {
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
           {posts.map(post => (
-              <PostList key={post.slug} post={post} aspect="square" />
+              <PostList key={post.title} post={post} aspect="square" />
           ))}
         </div>
       </Container>
