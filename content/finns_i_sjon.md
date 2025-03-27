@@ -6,7 +6,7 @@ date: '2025-03-02'
 featured: true
 author: sofia
 categories:
-  - category: 4aringar
+  - category: fyra
   - category: familjespel
   - category: kortspel
   - category: enkla
