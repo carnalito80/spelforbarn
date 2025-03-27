@@ -7,6 +7,7 @@ import Banner from "../components/banner";
 import { mapCategories } from '/utils/categories';
 import { getAuthorData } from '/utils/authors';  
 import Link from 'next/link';
+import Head from 'next/head';
 
 
 export async function getStaticProps() {
@@ -54,7 +55,16 @@ export default function Index({ posts }) {
 
   return (
     <>
-     <Banner pic='/images/board3.webp' />
+    <Head>
+      <title>Spel för Barn.se</title>
+      <meta name="description" content="En sida där vi recenserar och tipsar om bra bräd och kortspel för barn." />
+      <meta property="og:title" content="Spel för Barn.se" />
+      <meta property="og:description" content="En sida där vi recenserar och tipsar om bra bräd och kortspel för barn." />
+      <meta name="twitter:card" content='/images/board3.webp' />
+      <meta name='keywords' content="spel för barn, bra spel för barn, familjespel, barnspel, brädspel för barn, kortspel för barn" />
+      <script src="https://analytics.ahrefs.com/analytics.js" data-key="RULYQqVY0StNvHUBwEpnlg" async></script>
+    </Head>
+    <Banner pic='/images/board3.webp' />
       
 
       <Container large>
