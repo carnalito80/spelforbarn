@@ -39,7 +39,7 @@ Spelet erbjuder massor av variation tack vare de olika folkgrupperna och special
 
 ### Vad tycker vi?
 
-Som det kanske har framkommit av texten såhär lång, är Small World är en fantastisk kombination av strategi, humor och tillgänglighet som gör det till ett perfekt val för familjer som gillar brädspel. Det är tillräckligt lätt att lära sig för barn, men har ändå tillräckligt djup för att hålla även vuxna engagerade. Med sin charmiga design och varierande spelomgångar är det ett spel som kan spelas om och om igen utan att bli tråkigt. Det enda negativa är att det är konfliktspel, dvs det går ut på att attackera varandra, och det kan vara en negativ aspekt som inte passar alla.
+Som det kanske har framkommit av texten såhär långt, är Small World är en fantastisk kombination av strategi, humor och tillgänglighet som gör det till ett perfekt val för familjer som gillar brädspel. Det är tillräckligt lätt att lära sig för barn, men har ändå tillräckligt djup för att hålla även vuxna engagerade. Med sin charmiga design och varierande spelomgångar är det ett spel som kan spelas om och om igen utan att bli tråkigt. Det enda negativa är att det är konfliktspel, dvs det går ut på att attackera varandra, och det kan vara en negativ aspekt som inte passar alla.
 
 ### Small world regler.
 
