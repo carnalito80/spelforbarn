@@ -29,11 +29,22 @@ html {
   -webkit-tap-highlight-color: transparent
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gradientz-bot {
+  background-image: linear-gradient(to top, var(--color-green-200) 0%, var(--background) 100%);
+  /* background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); */
+}
+.gradientz-top {
+  background-image: linear-gradient(to bottom, var(--color-green-200) 0%, var(--background) 100%);
+  /* background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); */
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -42,6 +53,32 @@ body {
 .text-orange-jk {
   color: #ff9a00;
 }
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.8s ease-out 1s both;
+	        animation: rotate-center 0.8s ease-out 1s both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .main-article h1 {
   font-size: var(--text-4xl);
   line-height: var(--tw-leading, var(--text-3xl--line-height));

@@ -46,6 +46,7 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
+  <div id="menuWrapper" className="gradientz-top">
     <Container>
       <nav>
         <Disclosure>
@@ -83,7 +84,7 @@ export default function Navbar(props) {
                         alt="Logo"
                       
                         sizes="(max-width: 640px) 100vw, 200px"
-                        className="rounded-full object-cover"
+                        className="rounded-full object-cover rotate-center"
                         // fill
                         width="100"
                         height="100"
@@ -187,6 +188,7 @@ export default function Navbar(props) {
         </Disclosure>
       </nav>
     </Container>
+  </div>
   );
 }
 
