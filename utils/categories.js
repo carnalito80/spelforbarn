@@ -11,24 +11,24 @@ const categoryMap = {
       slug: "familjespel",
       color: "green", 
     },
-    fyra: {
+    fyraaringar: {
       title: "4år+",
-      slug: "4aringar",
+      slug: "fyraaringar",
       color: "blue", 
     },
-    sex: {
+    sexaringar: {
       title: "6år+",
-      slug: "6aringar",
+      slug: "sexaringar",
       color: "orange_jk", 
     },
-    tio: {
+    tioaringar: {
       title: "10år+",
-      slug: "10aringar",
+      slug: "tioaringar",
       color: "orange", 
     },
-    enkla: {
+    enkla_spel: {
       title: "Enkla spel",
-      slug: "enkla-spel",
+      slug: "enkla_spel",
       color: "lightblue", 
     },
     bradspel: {

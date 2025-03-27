@@ -147,7 +147,7 @@ export async function getStaticPaths() {
                     components={{
                       img: ({ node, ...props }) => (
                         <figure className="flex flex-col items-center">
-                        <image className="w-full max-w-xs md:max-w-md lg:max-w-lg mx-auto block" {...props} />
+                        <img className="w-full max-w-xs md:max-w-md lg:max-w-lg mx-auto block" {...props} />
                         {props.alt && <figcaption className="mt-2 text-sm text-gray-600 italic">{props.alt}</figcaption>}
                       </figure>
 

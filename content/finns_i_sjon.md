@@ -6,10 +6,10 @@ date: '2025-03-02'
 featured: true
 author: sofia
 categories:
-  - category: fyra
+  - category: fyraaringar
   - category: familjespel
   - category: kortspel
-  - category: enkla
+  - category: enkla_spel
   - category: regler
 featuredImage: '/images/finns_i_sjon.webp'
 excerpt: >-

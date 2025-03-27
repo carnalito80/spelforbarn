@@ -8,8 +8,8 @@ author: sofia
 categories:
   - category: familjespel
   - category: kortspel
-  - category: enkla
-  - category: sex
+  - category: enkla_spel
+  - category: sexaringar
   - category: recension
 featuredImage: '/images/sushi_go.webp'
 excerpt: >-

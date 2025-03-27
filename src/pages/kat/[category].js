@@ -20,11 +20,12 @@ export async function getStaticPaths() {
   files.forEach(filename => {
       const fileContent = fs.readFileSync(path.join('content', filename), 'utf-8');
       const { data } = matter(fileContent);
-
+      console.log(data)
       if (data.categories) {
           data.categories.forEach(catObj => {
               if (catObj.category) {
-                  categories.add(catObj.category); // Extract category name
+                if (catObj.category.slug && catObj.category.slug.length) categories.add(catObj.category.slug); // Extract category name
+                else categories.add(catObj.category); // Extract category name
               }
           });
       }
@@ -57,7 +58,7 @@ export async function getStaticProps({ params }) {
           const categoryNames = data.categories.map(catObj => catObj.category);
           if (categoryNames.includes(params.category)) {
               posts.push({
-                  slug: filename.replace('.md', ''),
+                  slug: data.slug || filename.replace('.md', ''),
                   title: data.title || filename.replace('.md', ''),
                   date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01",  // Ensure date format
                   status: data.status,
@@ -72,7 +73,7 @@ export async function getStaticProps({ params }) {
       }
   });
 
-  
+  console.log(posts)
    // Sort posts by date (newest first)
    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 

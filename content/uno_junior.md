@@ -6,10 +6,10 @@ date: '2025-03-27'
 featured: true
 author: jerker
 categories:
-  - category: familjespel
+  - category: enkla_spel
   - category: kortspel
   - category: regler
-  - category: fyra
+  - category: fyraaringar
   - category: recension
 featuredImage: '/images/uno_junior.webp'
 excerpt: >-
@@ -66,4 +66,4 @@ Dessa poäng antecknas och spelare som först når tex. 50 poäng är vinnaren.
 
 Uno Junior är en utmärkt introduktion till kortspel för yngre barn. Med sina enkla regler och roliga djurillustrationer gör det spelet till en rolig och lärorik aktivitet. Det kan man väl vara det perfekta "startspelet" och jag har personligen spelat spelat med 3-åringar.
 
-**9/10**
+Ett utmärkt första spel, **9/10**

@@ -59,6 +59,7 @@ export async function getStaticProps({ params }) {
           title: data.title,
           date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", // Convert to YYYY-MM-DD
           status: data.status,
+          slug: data.slug,
           categories,
           featuredImage: data.featuredImage,
           excerpt: data.excerpt,
@@ -91,8 +92,8 @@ export async function getStaticProps({ params }) {
 
 export default function Author(props) {
   const { loading, posts, author } = props;
-  console.log(posts)
-  console.log(author)
+  // console.log(posts)
+  // console.log(author)
   // const slug = author?.slug;
 
   // if (!loading && !slug) {
