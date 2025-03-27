@@ -54,7 +54,8 @@ const Posts = ({ posts }) => {
     <meta property="og:title" content="Spel för barn.se - Artiklar" />
     <meta property="og:description" content={`Kolla in våra artiklar om bra spel för barn.`} />
     <meta name="twitter:card" content="summary_large_image" />
-    {/* Add other meta tags as needed */}
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="RULYQqVY0StNvHUBwEpnlg" async></script>
+   
   </Head>
     <Container>
       <h1>Artiklar</h1>
