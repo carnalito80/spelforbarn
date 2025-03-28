@@ -10,7 +10,6 @@ import { notFound } from "next/navigation";
 import { getAuthorData } from '/utils/authors';  
 import { mapCategories } from '/utils/categories'; 
 import Head from 'next/head';
-import { useRouter } from "next/navigation";
 
 // Get all the author slugs (from the markdown files) for dynamic paths
 export async function getStaticPaths() {
@@ -59,13 +58,14 @@ export async function getStaticProps({ params }) {
       if (data.author && data.author === slug) {
         return {
           title: data.title,
+          slug: data.slug || fileName.replace('.md', ''),
           date: data.date ? new Date(data.date).toISOString().split("T")[0] : "1970-01-01", // Convert to YYYY-MM-DD
           status: data.status,
           categories,
           featuredImage: data.featuredImage,
           excerpt: data.excerpt,
           meta: data.meta,
-          author
+          author,
         };
       }
       return null;
@@ -93,8 +93,7 @@ export async function getStaticProps({ params }) {
 
 export default function Author(props) {
   const { loading, posts, author } = props;
-  const router = useRouter();
-  const currentUrl = `https://www.xn--spelfrbarn-icb.se${router.asPath}`;
+  const currentUrl = `https://www.xn--spelfrbarn-icb.se/author/${author.slug}`;
   const imageProps = "/images/board3.webp";
   // console.log(posts)
   // console.log(author)
