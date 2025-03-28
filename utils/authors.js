@@ -4,21 +4,21 @@ const authorMap = {
     jerker: {
       name: "Jerker",
       slug: "jerker",
-      color: "green", // Example color for 'space'
+      color: "green", 
       image: "jerker.jpg",
       bio: "Jerker brinner för brädpspel och kortspel av olika slag, allt från lite enklare spel som For Sale till tungviktare som War of the Ring. Favoritspelet med barnen och familjer än 7 Wonders."
     },
     sofia: {
       name: "Sofia",
       slug: "sofia",
-      color: "blue", // Example color for 'cows'
+      color: "blue", 
       image: "sofia.jpg",
       bio: "Sofia är en rutinerad gamer som för tillfället spelar Baldurs Gate 3 mer än brädspel. Kul för hennes, tråkigt för oss."
     },
     carl: {
       name: "Carl",
       slug: "carl",
-      color: "orange", // Example color for 'cleaning'
+      color: "orange", 
       image: "carl.jpg"
     },
   };

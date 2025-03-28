@@ -3,7 +3,7 @@ import Container from "/src/components/container";
 import Image from "next/image";
 import Link from "next/link";
 import { getAuthors } from '/utils/authors'; 
-
+import Head from 'next/head';
 
 
 export async function getStaticProps() {
@@ -22,6 +22,14 @@ const authors = await getAuthors();
 
 export default function About({ authors }) {
   return (
+    <>
+    < Head>
+      <title>Spel för barn.se - Om oss</title>
+      <meta name="description" content={`Information om vi som skriver artiklarna.`} />
+      <meta property="og:title" content="Spel för barn.se - Om oss" />
+      <meta property="og:description" content={`Information om vi som skriver artiklarna.`} />
+      {/* Add other meta tags as needed */}
+    </Head>
     <Container>
       <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
         Om oss
@@ -64,5 +72,6 @@ export default function About({ authors }) {
         </p>
       </div>
     </Container>
+   </>
   );
 }
