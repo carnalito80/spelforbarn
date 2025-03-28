@@ -10,7 +10,6 @@ export default function PostList({
   post,
   aspect,
   minimal,
-  pathPrefix,
   preloadImage,
   fontSize,
   fontWeight
@@ -93,9 +92,7 @@ export default function PostList({
               {post.excerpt && (
                 <p className="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
                   <Link
-                    href={`/post/${
-                      pathPrefix ? `${pathPrefix}/` : ""
-                    }${post.slug}`}>
+                    href={`/posts/${post.slug}`}>
                     {post.excerpt}
                   </Link>
                 </p>

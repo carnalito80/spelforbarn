@@ -132,7 +132,7 @@ const components = {
     },
     internalLink: ({ children, value }) => {
       return (
-        <Link href={`/post/${value?.slug?.current}`}>{children}</Link>
+        <Link href={`/posts/${value?.slug?.current}`}>{children}</Link>
       );
     }
   }

@@ -83,7 +83,6 @@ export default function Index({ posts }) {
                   <PostList
                     post={post}
                     preloadImage={true}
-                    pathPrefix="lifestyle"
                     fontSize="large"
                     aspect="custom"
                     fontWeight="normal"
@@ -95,7 +94,6 @@ export default function Index({ posts }) {
                   key={post.slug}
                   post={post}
                   aspect="landscape"
-                  pathPrefix="lifestyle"
                   fontWeight="normal"
                   preloadImage={true}
                 />
@@ -115,7 +113,6 @@ export default function Index({ posts }) {
               key={post.slug}
               post={post}
               fontWeight="normal"
-              pathPrefix="lifestyle"
               aspect="square"
             />
           ))}
