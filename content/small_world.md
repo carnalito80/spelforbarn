@@ -14,7 +14,7 @@ featuredImage: '/images/board3.webp'
 excerpt: >-
  Om du letar efter ett strategiskt och roligt brädspel att spela med familjen, så är Small World ett utmärkt val! Det är ett färgglatt och lättillgängligt spel där spelarna får ta kontroll över olika fantasifulla folkgrupper och kämpa om herraväldet över en liten men dynamisk värld.
 meta:
-  description: Om du letar efter ett strategiskt och roligt brädspel att spela med familjen, så är Small World ett utmärkt val! Det är ett färgglatt och lättillgängligt spel där spelarna får ta kontroll över olika fantasifulla folkgrupper och kämpa om herraväldet över en liten men dynamisk värld.
+  description: Om du letar efter ett strategiskt och roligt brädspel att spela med familjen, så är Small World ett utmärkt val!
   title: Small World – Ett Fantastiskt Familjespel!
   keywords: small word, small world regler, small world barn, small world brädspel
 ---

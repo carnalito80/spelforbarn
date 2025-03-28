@@ -9,6 +9,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAuthorData } from '/utils/authors';  
 import { mapCategories } from '/utils/categories'; 
+import Head from 'next/head';
+import { useRouter } from "next/navigation";
 
 // Get all the author slugs (from the markdown files) for dynamic paths
 export async function getStaticPaths() {
@@ -91,6 +93,9 @@ export async function getStaticProps({ params }) {
 
 export default function Author(props) {
   const { loading, posts, author } = props;
+  const router = useRouter();
+  const currentUrl = `https://www.xn--spelfrbarn-icb.se${router.asPath}`;
+  const imageProps = "/images/board3.webp";
   // console.log(posts)
   // console.log(author)
   // const slug = author?.slug;
@@ -101,6 +106,17 @@ export default function Author(props) {
 
   return (
     <>
+      < Head>
+          <title>Spel för barn - {author.name}</title>
+          <meta name="description" content="Välkommen till Spel för barn, websidan med bräd och kortspel för barn." />
+          <meta property="og:title" content={`Spel för barn - ${author.name}`} />
+          <meta property="og:description" content="Välkommen till Spel för barn, websidan med bräd och kortspel för barn." />
+          <meta property="og:url" content={currentUrl} />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content={imageProps} />
+          <meta name="twitter:card" content={imageProps} />
+          {/* Add other meta tags as needed */}
+        </Head>
       <Container>
         <div className="flex flex-col items-center justify-center">
           <div className="relative h-20 w-20 overflow-hidden rounded-full">

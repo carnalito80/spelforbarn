@@ -14,6 +14,7 @@ import { mapCategories } from '/utils/categories';
 import CategoryLabel from "/src/components/blog/category";
 import AuthorCard from "/src/components/blog/authorCard";
 import { getAuthorData } from '/utils/authors';  
+import { useRouter } from "next/navigation";
 
 export async function getStaticPaths() {
     const postsDirectory = path.join(process.cwd(), 'content');
@@ -67,6 +68,8 @@ export async function getStaticPaths() {
     
     const imageProps = post?.featuredImage ? post.featuredImage : null;
     const AuthorimageProps = post?.author?.image ? '/images/' + post.author.image : null;
+    const router = useRouter();
+    const currentUrl = `https://www.xn--spelfrbarn-icb.se${router.asPath}`;
 
     return (
         <>
@@ -75,6 +78,9 @@ export async function getStaticPaths() {
           <meta name="description" content={post.meta.description} />
           <meta property="og:title" content={post.meta.title} />
           <meta property="og:description" content={post.meta.description} />
+          <meta property="og:image" content={imageProps} />
+          <meta property="og:url" content={currentUrl} />
+          <meta property="og:type" content="website" />
           <meta name="twitter:card" content={imageProps} />
           {post.meta.keywords && (
           <meta name='keywords' content={post.meta.keywords} />

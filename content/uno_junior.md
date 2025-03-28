@@ -15,7 +15,7 @@ featuredImage: '/images/uno_junior.webp'
 excerpt: >-
  Uno Junior är en förenklad version av det klassiska kortspelet Uno, speciellt designad för yngre barn. Här är en översikt över spelet där vi går igenom regler och skillnaderna från vanliga Uno.
 meta:
-  description: Uno Junior är en förenklad version av det klassiska kortspelet Uno, speciellt designad för yngre barn. Här är en översikt över spelet där vi går igenom regler och skillnaderna från vanliga Uno.
+  description: Uno Junior är en förenklad version av det klassiska kortspelet Uno, speciellt designad för yngre barn. Här är en översikt över spelet där vi går igenom regler etc.
   title: Uno Junior - recension och regler
   keywords: uno junio regler, uno junior recension, uno junior vs uno, uno junior barn
 ---
