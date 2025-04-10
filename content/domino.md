@@ -10,7 +10,7 @@ categories:
   - category: familjespel
   - category: enkla_spel
   - category: regler
-featuredImage: '/images/finns_i_sjon.webp'
+featuredImage: '/images/domino.webp'
 excerpt: >-
  Domino är ett klassiskt spel som passar barn i alla åldrar, här går vi igenom reglerna och vad vi tycker om spelet.
 meta:
