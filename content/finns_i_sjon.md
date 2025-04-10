@@ -17,7 +17,7 @@ excerpt: >-
 meta:
   description: Finns i sjön är ett klassiskt kortspel som är utmärkt att spela med barn i unga åldrar. Här går vi igenom reglerna.
   title: Finns i sjön - regler och information
-  keywords: finns i sjön, finns i sjön regler, regler finns i sjön, hur spelar man finns i sjön
+  keywords: finns i sjön, finns i sjön regler, finns i sjön barn, hur spelar man finns i sjön, hur många kort ska man ha i finns i sjön
 ---
 
 ### Finns i sjön
@@ -25,7 +25,9 @@ meta:
 Finns i sjön är ett klassiskt kortspel som är utmärkt att spela med barn i unga åldrar. Man behöver bara en vanlig kortlek.
 
 #### Hur spelar man finns i sjön?
-Man börjar med att blanda korten och dela ut ett antal kort till varje spelare, det finns flera olika variant på hur många kort som bör delas ut, för 4 spelare så rekomenderar vi 5 kort var, för tre spelare 7 kort. Resten av korten sprids ut på bordet med baksidan uppåt, och dessa kort kallas för **sjön**. 
+Man börjar med att blanda korten och dela ut ett antal kort till varje spelare, det finns flera olika variant på hur många kort som bör delas ut, för **4 spelare så rekomenderar vi 5 kort var, för tre spelare 7 kort**. I slutändan är det upp till er hur många kort man ska ha när man i finns i sjön. 😀
+
+Resten av korten sprids ut på bordet med baksidan uppåt, och dessa kort kallas för **sjön**. 
 
 
 Målet är att samla alla 4 färger av varje typ av kort, tex. kungar eller treor. En spelare börjar, förslagsvis den yngsta, och denne frågar en annan spelare om den har tex. femmor, och om spelaren ifråga har femmor på handen måste spelare ge korten till spelaren som frågade. Ifall denne spelare nu har samlat ihop alla fyra färger av femmor så läggs dessa ner på bordet i en liten hög, och detta räknas som ett poäng. Eftersom spelaren hade de kort som efterfrågades får den aktiva spelaren fortsätta fråga, men i det fall där spelarem som förfrågades INTE har korten som eftersöks, säger denne "finns i sjön", och då måste spelaren ta ett kort från sjön. Sedan går turen vidare till nästa spelare, medsols.
