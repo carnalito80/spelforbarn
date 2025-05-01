@@ -10,7 +10,7 @@ categories:
   - category: familjespel
   - category: bradspel
   - category: recension
-featuredImage: '/images/board3.webp'
+featuredImage: '/images/small_w.webp'
 excerpt: >-
  Om du letar efter ett strategiskt och roligt brädspel att spela med familjen, så är Small World ett utmärkt val! Det är ett färgglatt och lättillgängligt spel där spelarna får ta kontroll över olika fantasifulla folkgrupper och kämpa om herraväldet över en liten men dynamisk värld.
 meta:

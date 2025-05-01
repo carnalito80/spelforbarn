@@ -3,7 +3,7 @@ template: SinglePost
 title: Finns i sjön
 status: Published
 date: '2025-03-02'
-featured: true
+featured: false
 author: sofia
 categories:
   - category: fyraaringar

@@ -51,6 +51,7 @@ posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 export default function Index({ posts }) {
   const featuredPost = posts.filter(item => item.featured) || null;
+  console.log(featuredPost)
   //const featuredPost = posts || null;
 
   return (
